@@ -29,6 +29,12 @@
         console.log($('.children_list').find('li'));
         //.eq(n) n번째 엘리먼트 찾기 *0부터 시작
         console.log($('.children_list li').eq(1));
+
+        //클릭 이벤트 이용하여 몇 번째 요소인지 찾기 
+        $('.children_list li').on('click', function(){
+            var index = $('.children_list li').index(this);
+            console.log(index);
+        })
     </script>
 </body>
 </html>
