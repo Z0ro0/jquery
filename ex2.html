@@ -17,6 +17,11 @@
             <li>셋째</li>
         </ul>
     </div>
+
+    <style>
+        .children_list li.active{background-color: orange;}
+    </style>
+
     <script type="text/javascript">
         //class로 요소 선택
         console.log($('.children_list'));
@@ -35,6 +40,13 @@
             var index = $('.children_list li').index(this);
             console.log(index);
         })
+        //addClass로 클래스 추가하여 1번째 li 색상 변경
+        $('.children_list li').eq(1).addClass('active');
+        //removeClass 클래스 삭제하여 1번째 li 색상 변경 취소
+        $('.children_list li').eq(1).removeClass('active');
+        //active 클래스가 있는지 체크(위에서 지웠으니까 false)
+        console.log($('.children_list li').eq(1).hasClass('active'));
+       
     </script>
 </body>
 </html>
