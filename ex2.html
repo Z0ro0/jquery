@@ -91,6 +91,10 @@
         console.log($('.children_list li').position());
         console.log($('.children_list li').position().top);
         console.log($('.children_list li').position().left);
+
+        //text() 이용해서 텍스트 내용 바꾸기
+        $('.children_list li').text('변경된 텍스트');
+        $('.children_list li').eq(2).text('변경된 2번째 텍스트');
     </script>
 </body>
 </html>
