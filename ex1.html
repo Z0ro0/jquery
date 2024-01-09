@@ -13,6 +13,16 @@
      </script>
 </head>
 <body>
-    
+    <img src="https://image.dongascience.com/Photo/2020/03/5bddba7b6574b95d37b6079c199d7101.jpg"/>
+    <script type="text/javascript">
+        //dom과 이미지 등 모든 게 다 로드 되었을 때 실행
+        window.onload = function (){
+            console.log('load');
+        }
+        //모든 dom이 로드 되면 실행, load보다 빠르게 실행
+        $(document).ready(function(){
+            console.log('ready');
+        })
+    </script>
 </body>
 </html>
