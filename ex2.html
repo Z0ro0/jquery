@@ -57,6 +57,17 @@
         $('<li>appendTo 찐막내</li>').appendTo('.children_list');
         //wrap() 이용해서 지정한 엘리먼트를 감싸는 엘리먼트 추가
         $('.parent').wrap('<div class="wrap">');
+
+        //css({}) 이용해서 css 속성 주기
+        $('.children_list li').eq(1).css({
+            color: 'red'
+        });
+        //removeAttr('style') 이용해서 엘리먼트 속성 제거
+        $('.children_list li').eq(1).removeAttr('style');
+        //attr() 이용해서 속성 지정
+        $('.children_list li').eq(1).attr('style', 'color:red');
+        //attr() 이용해서 속성 출력
+        console.log($('.children_list li').eq(1).attr('style'));
     </script>
 </body>
 </html>
