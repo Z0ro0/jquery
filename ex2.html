@@ -68,6 +68,11 @@
         $('.children_list li').eq(1).attr('style', 'color:red');
         //attr() 이용해서 속성 출력
         console.log($('.children_list li').eq(1).attr('style'));
+
+        //each 반복문 이용해서 li 태그 출력
+        $('.children_list li').each(function(index, list){
+            console.log(index, list);
+        })
     </script>
 </body>
 </html>
