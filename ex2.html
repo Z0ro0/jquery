@@ -73,6 +73,15 @@
         $('.children_list li').each(function(index, list){
             console.log(index, list);
         })
+
+        //패딩을 제외한 넓이값 가져옴
+        console.log($('.children_list li').width());
+        //패딩을 포함한 넓이값 가져옴
+        console.log($('.children_list li').outerWidth());
+        //패딩을 제외한 높이값 가져옴
+        console.log($('.children_list li').height());
+        //패딩을 포함한 높이값 가져옴
+        console.log($('.children_list li').outerHeight());
     </script>
 </body>
 </html>
