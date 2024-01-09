@@ -46,7 +46,17 @@
         $('.children_list li').eq(1).removeClass('active');
         //active 클래스가 있는지 체크(위에서 지웠으니까 false)
         console.log($('.children_list li').eq(1).hasClass('active'));
-       
+
+        //remove()이용해서 첫번째 요소 제거
+        $('.children_list li').eq(0).remove();
+        //prepend()이용해서 요소 처음에 다시 추가
+        $('.children_list').prepend('<li>첫째</li>');
+        //append() 이용해서 요소 끝에 추가
+        $('.children_list').append('<li>막내</li>');
+        //appendTo() 이용해서 요소 끝에 추가
+        $('<li>appendTo 찐막내</li>').appendTo('.children_list');
+        //wrap() 이용해서 지정한 엘리먼트를 감싸는 엘리먼트 추가
+        $('.parent').wrap('<div class="wrap">');
     </script>
 </body>
 </html>
