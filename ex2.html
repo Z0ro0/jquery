@@ -82,6 +82,15 @@
         console.log($('.children_list li').height());
         //패딩을 포함한 높이값 가져옴
         console.log($('.children_list li').outerHeight());
+
+        //offset() 이용해서 엘리먼트의 left top 좌표값 가져옴
+        console.log($('.children_list li').offset());
+        console.log($('.children_list li').offset().top);
+        console.log($('.children_list li').offset().left);
+        //position() 이용해서 엘리먼트의 left top 좌표값 가져옴(부모 기준)
+        console.log($('.children_list li').position());
+        console.log($('.children_list li').position().top);
+        console.log($('.children_list li').position().left);
     </script>
 </body>
 </html>
