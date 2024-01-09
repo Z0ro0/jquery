@@ -21,6 +21,10 @@
         //class로 요소 선택
         console.log($('.children_list'));
         console.log($('.children_list li'));
+        //선택한 요소의 자식 요소 검색
+        console.log($('.parent').children());
+        //선택한 요소의 자식 요소 검색 후 다시 부모 요소 검색 ==> 부모 요소 선택
+        console.log($('.parent').children().parent());
     </script>
 </body>
 </html>
