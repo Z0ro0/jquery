@@ -100,6 +100,29 @@
         console.log($('html').scrollLeft());
         //scrollTop() 이용해서 스크롤의 가로 위치 가져오기
         console.log($('html').scrollTop());
+
+        //.scroll 스크롤 이벤트
+        $(window).scroll(function(){
+            console.log('scroll event');
+        })
+        //.resize 사이즈 조정할 때마다 이벤트 발생
+        $(window).resize(function(){
+            console.log('resize event');
+        })
+        //.on 이용해서 스크롤 이벤트
+        $(window).on('scroll', function(){
+            console.log('scroll event');
+        })
+        //.on 이용해서 resize 이벤트
+        $(window).on('resize', function(){
+            console.log('resize event');
+        })
+        //.on 이용해서 click 이벤트 
+        $('.children_list li').on('click', function(){
+            console.log('클릭', $(this).text());
+        })
+        //이벤트 제거
+        $('.children_list li').off();
     </script>
 </body>
 </html>
