@@ -127,7 +127,7 @@
         })
         //이벤트 제거(이벤트 보고 싶으면 off 주석 해 줘야 됨)
         $('.children_list li').off();
-        // scroll 및 resize 이벤트 동시에 제거(.off() 두 번 써서 제거하면 하나는 제거 안 됨 한 문장에 전부 제거해 줘야 됨)
+        // scroll 및 resize 이벤트 동시에 제거(.off() 두 번 써서 제거하면 하나는 제거 안 됨 한 문장에 전부 제거해 줘야 됨 => 별개의 작업으로 인식하기 때문에 여러 줄이 동시에 실행되지 않아 한 줄씩 실행되기 떄문에)
         $(window).off('scroll resize');
         // handleScroll 함수를 사용하여 scroll 이벤트 제거
         $(window).off('scroll', handleScroll);
