@@ -123,6 +123,11 @@
         })
         //이벤트 제거(이벤트 보고 싶으면 off 주석 해 줘야 됨)
         $('.children_list li').off();
+        //resize 이벤트 두 개 제거 하는 법
+        //.on 제거
+        $(window).off('resize');
+        //.resize 제거
+        $(window).off('resize', handleResize);
     </script>
 </body>
 </html>
